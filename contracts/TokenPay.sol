@@ -33,7 +33,7 @@ contract tokenPay {
     }
 
     // Anyone can send funds; immediately convert them to DAI in order to protect value
-    function() public payable {
+    function() external payable {
         ethToDai(msg.value);
     }
 
