@@ -25,7 +25,7 @@ contract tokenPay {
     UniswapFactory private uniswapFactory;
     UniswapExchange private daiExchange;
 
-    constructor(address _daiAddress, UniswapFactory _uniswapFactory) internal {
+    constructor(address _daiAddress, UniswapFactory _uniswapFactory) public {
         uniswapFactory = _uniswapFactory;
 
         daiContract = ERC20(_daiAddress);
